@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: fit-content;
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container h1{
+    color: snow;
+    margin: 40px 0px;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+.shop-card-form{
+    min-height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 35px;
+}
+.shop-card-form div{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background: aliceblue;
+    border-radius: 15px;
+    min-height: 100px;
+    align-items: center;
+}
+.shop-card-form div h3{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: cornflowerblue;
+}
+.shop-card-form div p {
+    text-transform: capitalize;
+    width: 37% !important;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.shop-card-form div div .add-to-card-number{
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px 0px 7px;
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid cornflowerblue;
+    outline: none;
+}
+.shop-card-form div div .add-to-card-btn{
+    background: cornflowerblue;
+    color: white;
+    padding: 13px 40px;
+    outline: navajowhite;
+    font-size: 20px;
+    border: 1px solid cornflowerblue;
+    font-weight: bold;
+}
+
+span.item-cost {
+    color: red;
+    font-size: 20px;
+    background: snow;
+    padding: 10px;
+}
+
+.pay-area {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.price-pay-area{
+    font-size: 80px;
+    color: darkblue;
+}
+.paynow-pay-area{
+    width: 200px;
+    border: none;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.update-pay-area{
+    width: 200px;
+    border: none;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.header-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button.update-pay-area {
+    height: 40px;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 95%;
+    }
+    .container h1{
+        margin: 0;
+        font-size: 25px;
+    }
+    .shop-card-form div{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .shop-card-form div p{
+        line-height: 30px;
+        font-size: 16px;
+        width: 100% !important;
+        text-align: justify;
+        padding: 10px;
+    
+    }
+    span.item-cost{
+        margin: 20px 0px;
+    }
+    .pay-area{
+        flex-direction: column;
+    }
+    .paynow-pay-area{
+        margin: 0 auto;
+    }
+
+}
